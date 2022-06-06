@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Background color</title>
+        <style>
+            body{
+                background-color: lightgreen;
+            }
+            h1{
+                background-color: crimson;
+            }
+            .row{
+                background-color: cadetblue;
+                border:1px solid black;
+            }
+            .row div{
+                background-color: aqua;
+                border:1px solid black;
+                padding: 10px;
+                margin: 10px;
+            }
+            .row div:nth-child(2){
+                background-color: darkgreen;
+            }
+            .row div:nth-child(3){
+                background: violet;
+            }
+            .row div:last-child{
+                background-color: dimgrey;
+            }
+            </style>
+            <body>
+                <h1>BACKGROUND COLOR</h1>
+                <div class="row">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+            </body>

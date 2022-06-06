@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pscudo selector</title>
+        <style>
+            /*selects the h1 tag directly*/
+            h1:first-child{
+                color: blue;
+            }
+            /*selects the p tag sibiling of div*/
+            p:first-child{
+                color: red;
+            }
+            /*select the p tag and then to i tag from the i tag 1st child will be colored*/
+            p i:first-child{
+                color: green;
+            }
+            /*selects the p tag in between the i tags 1st child will colored for i tag*/
+            p:first-child i{
+                color: darkmagenta;
+            }
+            /*select the p tag and without adding any tag in p it will colored*/
+            p:last-child{
+                color: lime;
+            }
+            /*select the li tag sibiling of div the last li child will be colored*/
+            div li:nth-last-child(2){
+                color: red;
+            }
+            /*select the li tag sibling of div from last with adding 1 num will be colored
+            because we mentiond the last so it will count down to up*/
+            div li:nth-last-of-type(1){
+                color: blue;
+            }
+            /*select li tag sibling of ul and nth child wil count from up to down */
+            ul li:nth-child(1){
+                color: mediumspringgreen;
+            }
+            /*select li tag sibling of ul and nth of type will colored directly to given position number*/
+            ul li:nth-of-type(2){
+                color: darkgoldenrod;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>The :first-child Pseudo-class</h1>
+        <p>The :first-child pseudo-class matches a specified element that is the first child of another element.</p>
+        <div>
+            <p>Match the first element.</p>
+            <li>In the following example, the selector matches any element that is the first child of any element:</li>
+                <li>p:first-child {</li>
+                    <li>color: blue;</li>
+                    <li>{</li>
+        </div>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <div>
+            <p><i>pseudo-class</i> allows you to define special rules for different languages.</p>
+        </div>
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+BASICS OF CSS:-
+
+1,What is CSS?
+Like HTML, CSS is not a programming language. It's not a markup language either. 
+CSS is a style sheet language. CSS is what you use to selectively style HTML elements.
+
+For example, this CSS selects paragraph text, setting the color to red:
+
+p {
+  color: red;
+}
+
+2, CSS Editors:-
+
+Some of the popular editors that are best suited to wire CSS code are as following:
+
+-->Atom
+-->Visual Studio Code
+-->Brackets
+-->Espresso(For Mac OS  User)
+-->Notepad++(Great for HTML & CSS)
+-->Komodo Edit (Simple)
+-->Sublime Text (Best Editor)
+
+3, CSS Syntax:-
+
+ Selector {
+  		 Property 1 : value;
+                	 Property 2 : value;
+               	 Property 3 : value;
+             }
+  For example:
+         h1
+            {
+                Color: red;
+                 Text-align: center;
+
+            }
+          #unique 
+           {
+                 color: green;
+           }
+
+-->Selector: selects the element you want to target
+-->Always remains the same whether we apply internal or external styling 
+-->There are few basic selectors like tags, id’s, and classes
+-->All forms this key-value pair
+-->Keys: properties(attributes) like color, font-size, background, width, height,etc
+-->Value: values associated with these properties
+
+
+4,CSS Selectors:-
+
+The selector is used to target elements and apply CSS 
+Three simple selectors
+Element Selector 
+Id Selector
+Class Selector
+Priority of Selectors
+Id > Class>Element
+
+5,CSS Colors:-
+
+There are different colouring schemes in CSS
+Three widely used techniques are as follows
+
+RGB:-
+
+This starts with RGB and takes 3 parameter
+3 parameter basically corresponds to red, green and blue
+The value of each parameter may vary from 0 to 255.
+Eg: RGB(255,0,0); means color red
+
+HEX:-
+
+Hex code starts with # and comprises of 6 numbers which are further divided into 3 sets
+Sets basically correspond to Red, Green, and Blue
+Single set value can vary from 00 to 09 and AA to FF
+Eg: #ff0000 ; means color red
+
+RGBA:-
+
+This starts with RGB and takes 4 parameter
+4 parameter basically corresponds to red, green, blue and alpha
+Value of the first three parameters may vary from 0 to 255 and the last parameter ranges from 0 to 1 that is from 0.1, 0.2,…..0.9
+Eg: RGB(255,0,0,0); means color red
+
+6, CSS Background:-
+
+There are different ways by which CSS can have an effect on HTML elements
+
+Few of them are as follows:
+
+Color – used to set the color of the background
+Repeat – used to determine if the image has to repeat or not and if it is repeating then how it should do that
+Image – used to set an image as the background
+Position – used to determine the position of the image
+Attachment – It basically helps in controlling the mechanism of scrolling
+
+7,CSS Border:-
+
+Helps in setting up the border for HTML elements
+
+There are 4 properties that can help in setting up of border:
+
+Width – sets the width of the border
+Style – sets the style of border; Eg: solid, dashed etc.
+Color – sets the color of the border
+Radius – determines the roundness of the border
+You can set the border for specifically top, right, bottom and left
+We can also club top and bottom together and same goes for left and right
+
+Eg: border-width: 2px 5px;   sets top and bottom 2px; left and right 5px
+Border can also be set in a single line
+
+Eg: border : 2px solid blue; 

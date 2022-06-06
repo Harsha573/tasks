@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multi color</title>
+        <style>
+            section{
+                border:1px solid black;
+                margin:10px;
+                padding:20px;
+            }
+            .row,.row1{
+                border:1px solid black;
+                margin-bottom: 20px;
+                padding: 20px;
+                color: blue;
+            }
+            .row:first-child{
+                background-color: chocolate;
+            }
+            .row:nth-child(2){
+                background: linear-gradient(blue red green);
+            }
+            .row:nth-child(3){
+                background-color: chartreuse;
+            }
+            .row:nth-last-child(1){
+                background-color: darkgreen;
+            }
+            .row1{
+                background: linear-gradient(to right,red,yellow,blue);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Multi color</h1>
+        <section>
+                <div class="row">1</div>
+                <div class="row">1</div>
+             <div class="row1"></div>   
+                <div class="row">1</div>
+                <div class="row">1</div>
+                <div class="row">1</div>
+        </section>
+    </body>
+</html>
+                
+        

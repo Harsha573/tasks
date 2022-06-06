@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ABSOLUTE position</title>
+        <style>
+            section,div{
+                border:1px solid black;
+                margin-bottom: 10px;
+                padding:10px;
+                color: blue;
+            }
+            .div{
+                position: absolute;
+                top:500px;
+                z-index:1;
+            }
+            .div div{
+                position: relative;
+                top:100px;
+                left:600px;
+            }
+            .with{
+                position: absolute;
+                top:120px;
+                left:10px;
+            }
+            .without{
+                position:absolute;
+                top:200;
+                left:200px;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>Absolute position</h1>
+        <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor</p>
+        <div class="div">position: absolute;</div>
+        <section>
+            <h1>static position</h1>
+            <div class="with">However; if an absolute positioned element has no positioned ancestors,it uses the document body, and moves along with page scrolling.</div>
+        </section>
+        <section>
+            <h1>relative position</h1>
+            <div class="without">Absolute positioned elements are removed from the normal flow, and can overlap elements.</div>
+        </section>
+    </body>
+</html>

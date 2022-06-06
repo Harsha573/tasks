@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms2 task</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Registration form</legend>
+                <label>First name</label>
+                <input type="text" name="fname" placeholder="Enter first name"/><br><br/>
+
+                <label>Second name</label>
+                <input type="text" name="sname" placeholder="Enter second name"/><br><br/>
+
+                <label>Phone number</label>
+                <input type="number" name="pnum"/><br><br/>
+
+                <label>Email id</label>
+                <input type="text" name="email" placeholder="Enter the mail id"/><br><br/>
+
+                <label>Graduation</label>
+                <select name="COURSE">
+                    <option>UG</option>
+                    <option>PG</option>
+                    <option>Diploma</option>
+                    <option>b.com/mba/bsc</option>
+                </select><br><br/>
+
+                <label>Passed out year</label>
+                <select year="year">
+                    <option>2019</option>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                </select><br>
+
+                <!--input checkbox-->
+                <label>Language knows</label>
+                <input type="checkbox" name="lang" value="telugu"/>Telugu
+                <input type="checkbox" name="lang" value="hindi"/>Hindi
+                <input type="checkbox" name="lang" value="english"/>English<br><br/>
+
+                <!--input date(calender)-->
+                <label>Date of birth</label>
+                <input type="date" name="dob"/><br><br/>
+
+                <!--input file-->
+                <label>Select a file</label>
+                <input type="file" name="myfile"/><br><br/>
+
+                <!--input colorpicker-->
+                <label>favourite color</label>
+                <input type="color" name="fcolor" value="#ff0000"/><br><br/>
+
+                <!--input range-->
+                <label>Range (0 - 100 ) </label>
+                <input type="range" name="range" min="0" max="100"/><br><br/>
+
+                <!--input search-->
+                <label>Google search</label>
+                <input type="search" name="gsearch"/><br><br/>
+                
+                <input type="Submit" name="Register"/>
+
+
+                
+                
+
+            </fieldset>
+        </form>
+    </body>
+</html>

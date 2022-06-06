@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>flex COLUMNS</title>
+        <style>
+            section.column4{
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            section.column4 div{
+                border: 1px solid black;
+                -ms-flex: 1;
+                 flex: 1;
+                margin: 3px;
+                padding: 30px;
+            }
+            section.column4 div:nth-of-type(4){
+                background-color: black;
+                color: beige;
+            }
+            section.column4 div:nth-child(3){
+                background-color: blue;
+                color: beige;
+            }
+            section.column4 div:nth-last-of-type(3){
+                background-color: violet;
+                color: beige;
+            }
+            section.column4 div:nth-last-child(4){
+                background-color: green;
+                color: beige;
+            }
+            </style>
+    </head>
+    <body>
+        <h1 align="center">4 COLUMNS</h1>
+     <section class="column4">
+        <div>FLEX1</div>
+        <div>FLEX2</div>
+        <div>FLEX3</div>
+        <div>FLEX4</div>
+     </section>
+    </body>
+</html>

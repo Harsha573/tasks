@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>1 type of Grid</title>
+        <style>
+            .rows{
+                box-sizing: border-box;
+                display: grid;
+                background-color: aqua;
+                border: 1px solid black;
+                padding: 10px;
+                gap: 10px;
+            }
+            .grid-layout{
+                background-color: crimson;
+                padding: 20px;
+            }
+            .columns1{
+                grid-column: 1 / span 2;
+                grid-row: 1;
+            }
+            .columns2{
+                grid-column: 3;
+                grid-row: 1 / span 2;
+            }
+            .rows div{
+                box-sizing: border-box;
+                display: grid;
+                background-color: cornflowerblue;
+                border: 1px solid black;
+                grid-template-columns:  33.3% 33.3% 33.3% ;
+                grid-template-rows: 30px 30px;
+            }
+           /* .rows img{
+                display: grid;
+                border: 1px solid black;
+                grid-template-columns:  33.3% 33.3% ;
+                grid-template-rows:  250px 250px 250px 250px;
+                background-color: red;
+            }*/
+            .rows_img{
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                grid-template-rows: 250px 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registeration Form</h1>
+        <div class="rows">
+            <div class="grid-layout columns1">Enter full name:-</div>
+            <div class="grid-layout columns2">Attach Photo</div>
+            <div class="grid-layout columns3">Email id:-</div>
+            <div class="grid-layout columns4">Date-Of-Birth</div>
+            <div class="grid-layout columns5">Address</div>
+            <div class="grid-layout columns6">City</div>
+            <div class="grid-layout columns7">State</div>
+            <div class="grid-layout columns8">Phone NUMBER</div>
+            <div class="grid-layout columns9">PIN code</div>
+            <div class="grid-layout columns10">SUBMIT</div>
+        </div>
+        <h1>Images/Audios/videos</h1>
+        <div class="row_img">
+            <img src="https://images.unsplash.com/photo-1654041960260-2bd133c7e6fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" width="200" hight="300">
+            <img src="https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw3NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" width="200">
+            <img src="https://images.unsplash.com/photo-1654007970795-6420691906b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" width="200" hight="300">
+           <img src="https://images.unsplash.com/photo-1653937634241-f0bcfb489723?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" width="200" hight="300">
+        </div> 
+    </div>
+        </body>
+</html>
