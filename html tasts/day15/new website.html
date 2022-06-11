@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    .fixed{
+       display: flex;
+    }
+    .num{
+        flex:1;
+    }
+    .img{
+        flex:1
+    }
+    .space{
+        flex:4;
+    }
+    .img{
+        flex:1
+    }
+    .img1{
+        flex:1;
+    }
+    .img2{
+        flex:1;
+    }
+    .img img{
+        width:30px;
+        height:30px
+    }
+    .img1 img{
+        width:30px;
+        height:30px
+    }
+    .img2 img{
+        width:30px;
+        height:30px
+    }
+   .row4{
+       display: flex;
+   }
+   .green{
+       flex:1;
+       color: green;
+   }
+   .row ul{
+    display: flex;
+    justify-content: right;
+    padding: 0;
+    margin:0;
+    list-style: none;
+   }
+  .row ul li{
+      flex:6;
+  }
+  .row li a{
+
+    color: azure;
+    text-decoration: none;
+    padding:25px 20px;
+    font-size: 13px;
+    color:black;
+    
+  }
+ background{
+    
+    padding: 5px;
+    border:2px solid greenyellow;
+    border-radius: 8px;
+    cursor: pointer;
+ }
+ .image{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height:70vh;
+     background-image: linear-gradient(green,black),url(../slide/slide-1.jpg);
+     background-size: cover;
+     background-blend-mode: multiply;
+ }
+ .background h2{
+     text-align: center;
+     top:100%;
+     color: white;
+ }
+ .background p{
+     text-align: center;
+     color: white;
+
+ }
+ .button{
+     position: absolute;
+     align-items: center;
+     right:45.5%;
+     color: white;
+     background-color: green;
+     padding: 20px;
+     margin:20px;
+     cursor: pointer;
+ }
+ .display{
+     display: flex;
+ }
+ .figure{
+     flex:1;
+ }
+ .header2{
+     display: flex;
+ }
+ .header2 > about-img{
+    flex:1;
+    padding:20px;
+ }
+ .sdiv{
+     display: grid;
+     column-gap: 50px;
+     grid-template-columns: auto auto auto;
+     padding:20px;
+ }
+ .sdiv1{
+     padding:20px;
+     font-size: 20px;
+     text-align: center;
+ }
+ .sdiv2{
+     padding:20px;
+     font-size:20px;
+     text-align:center;
+ }
+ .sdiv3{
+     padding:20px;
+     font-size:20px;
+     text-align:center;
+ }
+ .sdiv4{
+     padding:20px;
+     font-size:20px;
+     text-align: center;
+ }
+ .sdiv5{
+     padding:20px;
+     font-size:20px;
+     text-align: center;
+ }
+ .sdiv6{
+     padding:20px;
+     font-size:20px;
+     text-align:center;
+ }
+ .clienter{
+     display: flex;
+ }
+ .client1 > img{
+     flex:1;
+     margin:10px;
+     padding:20px;
+ }
+ .client2 > img{
+     flex:1;
+     margin:10px;
+     padding:20px;
+ }
+ .client3 > img{
+     flex:1;
+     margin:10px;
+     padding:20px; 
+ }
+ .client4 > img{
+     flex:1;
+     margin:10px;
+     padding:20px; 
+ }
+ .client5 > img{
+     flex:1;
+     margin:10px;
+     padding:20px; 
+ }
+ .client6 > img{
+     flex:1;
+     margin:10px;
+     padding:20px; 
+ }
+ .client7 > img{
+     flex:1;
+     margin:10px;
+     padding:20px; 
+ }
+ .client8 > img{
+     flex:1;
+     margin:10px;
+     padding:20px; 
+ }
+ .service-1{
+    display: grid;
+    position: relative;
+     row-gap: 50px;
+     grid-template-rows: 150px 150px 150px 150px;
+     grid-template-columns: 33.3% 33.3% 33.3%;
+     padding:20px;
+ }
+ .serv-1{
+    padding:20px;
+     font-size:20px;
+     text-align:center;
+ }
+ .serv-2{
+    padding:20px;
+     font-size:20px;
+     text-align: center;
+ }
+ .serv-3{
+    padding:20px;
+     font-size:20px;
+     text-align:center;
+ }
+ .serv-4{
+    padding:20px;
+     font-size:20px;
+     text-align:center;
+ }
+ .serv-5{
+    padding:20px;
+     font-size:20px;
+     text-align:center;
+ }
+ .serv-6{
+    padding:20px;
+     font-size:20px;
+     text-align:center;
+ }
+ .harsha{
+     background-color: green;
+     border: 1px solid black;
+     width: 100%;
+     height: 400px;
+     text-align: center;
+ }
+ .harsha har{
+     display: flex;
+     position: absolute;
+     justify-content: center;
+     border:1px solid black;
+ }
+ .har h2{
+     text-align: center;
+     top:100%;
+     color:white;
+ }
+ .har p{            
+     text-align: center;
+     color: white;
+ }
+ .har button1{
+     position:absolute;
+     align-items: center;
+     right:90%;
+     color: white;
+     background-color: green;
+     cursor: pointer;
+ }
+ .pointer{
+    text-align: center;
+     top:100%;
+     border-block-end-width: 60%;
+ }
+ .pointer point-1{
+     justify-content: center;
+     padding:10px;
+ }
+ .app1{
+     justify-content: center;
+     text-align: center;
+     border-width: 10%;
+ }
+ .app1 ul{
+     display: flex;
+     color: black; 
+ }
+ .app1 li{
+     flex: 1;
+     background-color: green;
+     cursor: pointer;
+
+ }
+.portal{
+     display: grid;
+     position: relative;
+     row-gap: 50px;
+     grid-template-rows: 100px 100px 100px 100px;
+     grid-template-columns:300px 300px 300px;
+     padding:20px;
+ }
+ .portal1{
+     padding:20px;
+ }
+ </style>
+    </head>
+    <body>
+        <div class="fixed">
+               <div class="border">
+                    <div class="mail">
+                        info@example.com
+                    </div>
+                    <div class="num">
+                        +1 5589 55488 55
+                    </div>
+                    <div class="space">
+                    </div>
+                    <div class="img">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/934px-Twitter-logo.svg.png">
+                    </div>
+                    <div class="img1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png">
+                    </div>
+                    <div class="img2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRUeS7N0SQhPmhvGot70Vnb0dgiBrKPr4zCQ&usqp=CAU">
+                    </div>
+                </div>
+            <div class="row4">
+                <div class="green">
+                    <h2>Green</h2>
+                </div>
+            </div>
+                <div class="row">
+                <ul>
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#">SERVICE</a>
+                    </li>
+                    <li>
+                        <a href="#">PORTOFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#">TEAM</a>
+                    </li>
+                    <li>
+                        <a href="#">DROPDOWN</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                    <li>
+                        <input type="button" value="to start" name="GetStarted">
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="background">
+                <div class="image">
+                    <h1>Lorem Ipsum Dolor</h1>
+                        <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea 
+                        voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto. </p>
+                        <a href="#" class="button">Read more</a>
+                </div>
+                <div class="display">
+                    <figure>
+                        <img src="https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-laptop-icon-png-image_1753317.jpg" height="60" width="80">
+                        <figcaption><h3>ui ea ut et est quaer</h3>voluptatum deleniti atque corrupti quos dolorest quas molestias excepturi sint occaecati cupiditate non provident </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://cdn.iconscout.com/icon/free/png-256/office-bag-1438758-1214088.png" height="60" width="80">
+                        <figcaption><h3>Dolor Sitema</h3>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://media.istockphoto.com/vectors/calculator-icon-mathematics-web-button-vector-illustration-internet-vector-id1390606648?b=1&k=20&m=1390606648&s=612x612&w=0&h=rk65C_BPaSfRa2tXqtUHmpxK14x_75sEISugAg9alro=" height="60" width="80">
+                        <figcaption><h3>Sed ut perspiciatis</h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur trade stravi </figcaption>
+                    </figure>
+                </div>
+                <div class="header1">
+                    <h1 align="center">ABOUT US</h1>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit.Quisquam quos quisquam cupiditate. Et nemo 
+                        qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <div class="header2">
+                                  <p><br>Voluptatem dignissimos provident quasi 
+                                    corporis voluptates sit assumenda.</br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                                    tempor incididunt ut labore et dolore magna aliqua. 
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit. 
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                    irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro 
+                                    dolore eu fugiat nulla pariatur. 
+                                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+                                    qui officia deserunt mollit anim id est laborum </p>
+                                    <div class="about-img">
+                                    <img src="../about.jpg" width="700" height="500">
+                                    </div>
+                        </div>
+                        <div class="sdiv">
+                            <div class="sdiv1">
+                                <h2>01</h2>
+                                <h3>Lorem Ipsum </h3>
+                                <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat </p>
+                            </div>
+                            <div class="sdiv2">
+                                <h2>02</h2>
+                                <h3>Repellat Nihil </h3>
+                                <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et veldire leno para dest </p>
+                            </div>
+                            <div class="sdiv3">
+                                <h2>03</h2>
+                                <h3>Ad ad velit qui </h3>
+                                <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis </p>
+                            </div>
+                            <div class="sdiv4">
+                                <h2>04</h2>
+                                <h3>Repellendus molestiae </h3>
+                                <p>Inventore quo sint a sint rerum. Distinction blanditiis deserunt quod soluta quod nam mider lando casa </p>
+                            </div>
+                            <div class="sdiv5">
+                                <h2>05</h2>
+                                <h3>Sapiente Magnam </h3>
+                                <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam </p>
+                            </div>
+                            <div class="sdiv6">
+                                <h2>06</h2>
+                                <h3>Facilis Impedit </h3>
+                                <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="clients">
+                            <div class="server">
+                            <h1 align="center">OUR CLIENTS</h1>
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo 
+                                qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            </div>
+                         </div>
+                        <div class="clienter">
+                        <div class="client1">
+                            <img src="../clients/client-1.png"width="80" height="60">
+                        </div>
+                        <div class="client2">
+                            <img src="../clients/client-2.png"width="80" height="60">
+                        </div>
+                        <div class="clien3">
+                            <img src="../clients/client-3.png"width="80" height="60">
+                        </div>
+                        <div class="client4">
+                            <img src="../clients/client-4.png"width="80" height="60">
+                        </div>
+                        <div class="client5">
+                            <img src="../clients/client-5.png"width="80" height="60">
+                        </div>
+                        <div class="client6">
+                            <img src="../clients/client-6.png"width="80" height="60">
+                        </div>
+                        <div class="client"7>
+                            <img src="../clients/client-7.png"width="80" height="60">
+                        </div>
+                        <div class="client8">
+                            <img src="../clients/client-8.png"width="80" height="60">
+                        </div>
+                        </div>
+                            <div class="service">
+                                 <div class="service1">
+                                     <h1 align="center">SERVICE</h1>
+                                     <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo 
+                                        qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quaso. 
+                                        </p>
+                                 </div>
+                            </div>
+                            <div class="service-1">
+                                <div class="serv-1">
+                                    <img src="https://toppng.com/uploads/preview/web-png-jpg-transparent-stock-website-icon-blue-11563644926reanjnmk6x.png"width="60" height="40">
+                                     <h2>Lorem Ipsum</h2>
+                                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi </p>
+                                </div>
+                                <div class="serv-2">
+                                    <img src="https://i.pinimg.com/564x/30/e2/13/30e213be64a823462db0dcf66d9ec0a9--free-flat-icons-free-icon.jpg"width="60" height="40">
+                                    <h2>Sed Perspiciatis</h2>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore </p>
+                                </div>
+                                <div class="serv-3">
+                                    <img src="https://media.istockphoto.com/vectors/speedometer-logo-design-flat-simple-vector-icon-isolated-vector-id1219938846?k=20&m=1219938846&s=612x612&w=0&h=uqZeh2TBzs2nJGy87FQkssLbFEpQkQU-zmHWdRwOWww="width="60" height="40">
+                                    <h2>Magni Dolores</h2>
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia </p>
+                                </div>
+                                <div class="serv-4">
+                                    <img src="data:image/png;base64,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" width="60" height="40">
+                                    <h2>Nemo Enim</h2>
+                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </p>
+                                </div>
+                                <div class="serv-5">
+                                    <img src="https://static.vecteezy.com/system/resources/previews/002/363/076/original/computer-icon-free-vector.jpg"width="60" height="40">
+                                    <h2>Dele Cardo</h2>
+                                    <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur </p>
+                                </div>
+                                <div class="serv-6">
+                                    <img src="https://thumbs.dreamstime.com/b/castle-tower-line-icon-castle-tower-line-icon-linear-style-sign-mobile-concept-web-design-fortress-tower-outline-vector-199357719.jpg"width="60" height="40">
+                                    <h2>Divera Don</h2>
+                                    <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur.</p>
+                                </div>
+                            </div>
+                            <div class="harsha">
+                                <div class="har">
+                                    <h2>Call To Action</h2>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                                        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <button  class="button1"type="for click">Call To Action</button>
+                                </div>
+                            </div>
+                            <div class="pointer">
+                                <div class="point-1">
+                                    <h2 align="center">Portfolio </h2>
+                                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo 
+                                        qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas. </p>
+                                </div>
+                            </div>
+                            <div class="app1">
+                                    <ul>
+                                        <li>
+                                            <a href="#">ALL</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">APP</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CARD</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">WEB</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                            <div class="portal">
+                                <div class="portal1">
+                                    <img src="../portfolio/portfolio-1.jpg" width="400" height="500">
+                                </div>
+                                <div class="portal2">
+                                    <img src="../portfolio/portfolio-2.jpg"width="400" height="500">
+                                </div>
+                                <div class="portal3">
+                                    <img src="../portfolio/portfolio-3.jpg"width="400" height="500">
+                                </div>
+                                <div class="portal4">
+                                    <img src="../portfolio/portfolio-4.jpg"width="400" height="500">
+                                </div>
+                                <div class="portal5">
+                                    <img src="../portfolio/portfolio-5.jpg"width="400" height="500">
+                                </div>
+                                <div class="portal6">
+                                    <img src="../portfolio/portfolio-6.jpg"width="400" height="500">
+                                </div>
+                                <div class="portal17">
+                                    <img src="../portfolio/portfolio-7.jpg"width="400" height="500">
+                                </div>
+                                <div class="portal8">
+                                    <img src="../portfolio/portfolio-8.jpg"width="400" height="500">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+         </div>
+    </body>
+            

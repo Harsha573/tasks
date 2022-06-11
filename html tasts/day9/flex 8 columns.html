@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>8 columns</title>
+    <style>
+        section.flex{
+            padding: 10px;
+        }
+        section.flex{
+            display: flex;
+            padding: 10px;
+        }
+        section.flex div{
+            display: flex;
+            border: 1px solid black;
+            -ms-flex: 1;
+            flex: 1;
+            margin: 3px;
+            padding: 30px;
+        }
+        section.flex div:nth-last-of-type(2){
+            background-color: black;
+            color: chartreuse;
+        }
+        section.flex div:nth-last-of-type(7){
+            background-color: red;
+            color: chartreuse;
+        }
+        section.flex div:nth-last-of-type(8){
+            background-color: gray;
+            color: chartreuse;
+        }
+        section.flex div:nth-child(8){
+            background-color: cornflowerblue;
+            color: chartreuse;
+        }
+        section.flex div:nth-child(3){
+            background-color: chocolate;
+            color: chartreuse;
+        }
+        section.flex div:nth-last-child(3){
+            background-color: maroon;
+            color: chartreuse;
+        }
+        section.flex div:nth-last-child(4){
+            background-color: gold;
+            color: black;
+    </style>
+    </head>
+<body>
+    <h1 align="center">8 Columns</h1>
+    <section class="flex">
+        <div>FLEX1</div>
+        <div>FLEX2</div>
+        <div>FLEX3</div>
+        <div>FLEX4</div>
+        <div>FLEX5</div>
+        <div>FLEX6</div>
+        <div>FLEX7</div>
+        <div>FLEX8</div>
+    </section>
+</body>
+</html>

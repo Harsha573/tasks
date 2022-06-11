@@ -1,0 +1,199 @@
+Basic Model of HTML5 :-
+1.Intro of audio and video: 
+
+    Audio and Video tags are the two major addition to HTML5. 
+    It allows developers to embed a video or audio on their website. 
+    HTML5 video can use CSS and CSS3 to style the video tag. 
+    You can change the border, opacity, reflections, gradients, transitions, transformations, and even animations.
+    HTML5 makes adding video super-fast and without having to build a video player.
+    This saves time for the developer and offers the client a superior and more affordable solution.
+
+     EXAMPLE :-
+     
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Example of video and audio tag</h2>
+    
+  <video  width = "300" height = "200" controls autoplay>
+       <source src = "/html5/foo.ogg" type ="video/ogg" />
+       <source src = "/html5/foo.mp4" type = "video/mp4" />
+        Your browser does not support the video element.
+   </video>
+    
+   <audio controls autoplay>
+       <source src = "/html5/audio.ogg" type = "audio/ogg" />
+       <source src = "/html5/audio.wav" type = "audio/wav" />
+        Your browser does not support the audio element.
+   </audio>
+</body>
+</html>  
+
+2.Vector Graphics:
+This is a new addition to the revised version which has hugely impacted the use of Adobe Flash in websites. 
+It can be used to draw graphics with various shapes and colors via scripting usually JS. 
+Vector graphics are scalable, easy to create and edit. It also supports interactivity and animation. 
+Having a smaller file size makes transferring and loading graphics much faster on the web. 
+That’s the reason why many people prefer to use vector graphics.
+
+Example:
+
+
+<svg id = "svgelem" height = "200" xmlns = "http://www.abc.org/2000/svg">
+ <circle id = "redcircle" cx = "50" cy = "50" r = "50" fill = "red" />
+</svg>
+
+3.Header and Footer:
+With these new tags, there is no longer a need to identify the two elements with a <div> tag.
+Footer is placed at the end of the web page while Header is placed at the start of the web page.
+By using <header> and <footer> HTML5 elements, the browser will know what to load first and what to load later. 
+
+The header can contain-
+
+One or more heading elements (<h1> – <h6>)
+Logo or icon
+Authorship information
+Footer can contain-
+
+Authorship information
+Copyright information
+Contact information
+Back to top links
+They both have the same default CSS property as a display block.
+
+
+Layout of HTML vs HTML5
+
+Example: Below examples illustrate the <header> element in HTML:
+
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+   <title>Header Tag</title> 
+</head> 
+<body> 
+   <article> 
+       <header> 
+           <h1>This is the heading.</h1> 
+           <h4>This is the sub-heading.</h4> 
+             
+<p>This is the metadata.</p>
+
+       </header> 
+   </article> 
+</body> 
+</html>                     
+
+4.Figure and Figcaption:
+HTML5 allows to use a <figure> element to mark up a photo in a document, and a <figcaption> element to define a caption for the photo. 
+The <figcaption> tag defines a caption for a <figure> element. 
+This tag provides a container for content that is equivalent to a figure. 
+It can be used to group a caption with one or more images, a block of code, or other content.
+
+Example:
+
+
+<figure>
+<img 
+  src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/
+       download3.png" alt="GFG" style="width:50%">
+<figcaption>Fig.1 - Geeksforgeeks.</figcaption>
+</figure>
+
+5.Nav tag:
+The <nav> tag defines a set of navigation links. 
+It is used for the part of an internet site that links to different pages at the website. 
+The hyperlinks can be organized through a number of approaches. Common examples of the nav elements are menus, tables, contents, and indexes.
+This element makes it much easier to create a navigation menu, creates a neat horizontal menu of text links, and helps screen reading software to correctly identify primary navigation areas in the document.
+
+Example:
+
+
+<h1> HTML Nav tag</h1>
+<nav>
+<a href="/html/">HTML</a>
+<a href="/css/">CSS</a>
+<a href="/js/">JavaScript</a>
+<a href="/jquery/">jQuery</a>
+</nav>
+
+6.Progress tag:
+The progress tag is used to check the progress of a task during the execution. 
+Progress tag can be used with the conjunction of JavaScript.
+
+Example:
+
+<h1>The progress element</h1>
+
+<label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
+
+7.Placeholder Attribute:
+The placeholder attribute specifies a short hint that describes the expected value of an input field/text area. 
+The short hint is displayed in the field before the user enters a value.
+Example:
+
+
+<!DOCTYPE html> 
+<html> 
+  
+<body> 
+    <center> 
+        <h1 style="font-size:25px;font-style:italic;"> 
+            GeeksforGeeks 
+        </h1> 
+        <h2 style="font-size:25px;font-style:italic;"> 
+        Placeholder Attribute in Input Element 
+        </h2> 
+        <form action=" "> 
+            <input type="text" name="fname"
+                            placeholder="First name"> 
+            <br> 
+            <input type="text" name="lname"
+                            placeholder="Last name"> 
+            <br> 
+            <input type="submit" value="Submit"> 
+        </form> 
+</center> 
+</body> 
+  
+</html> 
+
+8.Email attribute:
+When the input type in the form set as email, then the browser gets the instruction from the code to write a valid format email. 
+The input email id is automatically validated to check the format of the email id is correct or not.
+Example:
+
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> 
+            HTML input type email 
+        </title> 
+    </head> 
+      
+    <body style="text-align:center;"> 
+          
+        <h1 style="color:green;"> 
+            GeeksForGeeks 
+        </h1> 
+          
+        <h2>HTML <input type ="email"></h2> 
+          
+        <form> 
+            Email: <input type ="email"
+                value="manaschhabra499@gmailo.com"> 
+        </form> 
+    </body> 
+</html>
+
+9.Storage:
+In the case of HTML, we can use the browser as the temporary storage whereas, in the case of HTML5, application cache, web SQL database, and web storage is used.
+
+10.Ease of use:
+ While HTML5 does have risks like constant updates, it is generally easy to keep up with the changes & updates because of simpler syntax as compared to other versions of HTML.
+
+There are a lot more tags and functionalities added in HTML5. Some common tags are nav, aside, section, summary, article, meter, and many more.
+
+Attention reader! Don’t stop learning now. Get hold of all the important HTML concepts with the Web Design for Beginners | HTML  course.

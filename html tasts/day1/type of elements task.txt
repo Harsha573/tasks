@@ -1,0 +1,37 @@
+Types of element:-
+
+There are three kinds of HTML elements: normal elements, raw text elements, and void elements.
+[1] NORMAL ELEMENTS:-
+
+Normal elements usually have both a start tag and an end tag, although for some elements the end tag, or both tags, can be omitted.
+ It is constructed in a similar way:
+
+* a start tag (<tag>) marking the beginning of an element, which may incorporate any number of HTML attributes;
+* some amount of content, including text and other elements;
+* an end tag, in which the element name is prefixed with a slash: </tag>.
+
+[2]RAW TEXT ELEMENTS:-
+
+* Raw text elements also known as text or text-only elements.
+* A start tag (in the form <tag>) marking the beginning of an element, which may incorporate any number of HTML attributes;
+* some amount of text content, but no elements (all tags, apart from the applicable end tag, will be interpreted as content);
+* An end tag, in which the element name is prefixed with a slash: </tag>. In some versions of HTML, the end tag is optional for some elements. The end tag is required in XHTML.
+* An example is the <title> element, which must not contain other elements (including markup of text), only plain text.
+
+[3]VOID ELEMENTS:-
+
+Void elements (also sometimes called empty elements, single elements or stand-alone elements) only have a start tag (in the form <tag>), 
+which contains any HTML attributes. 
+They may not contain any children, such as text or other elements. For compatibility with XHTML, the HTML specification allows an optional space and slash (<tag /> is permissible). 
+The space and slash are required in XHTML and other XML applications. Two common void elements are <br /> (for a hard line-break, such as in a poem or an address) and <hr /> (for a thematic break).
+ Other such elements are often place-holders which reference external files, such as the image (<img />) element.
+ The attributes included in the element will then point to the external file in question. 
+Another example of a void element is <link />, for which the syntax is:
+
+<link rel="stylesheet" href="fancy.css" type="text/css">
+
+This <link /> element points the browser at a style sheet to use when presenting the HTML document to the user.
+ Note that in the HTML syntax attributes don't have to be quoted if they are composed only of certain characters: letters, digits, the hyphen-minus and the period. 
+ When using the XML syntax (XHTML), on the other hand, all attributes must be quoted, and a spaced trailing slash is required before the last angle bracket:
+
+<link rel="stylesheet" href="fancy.css" type="text/css" />

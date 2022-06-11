@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ANIMATION</title>
+        <style>
+            div {
+                width: 100px;
+                height: 50px;
+                background-color: rgba(0, 247, 255, 0.473);
+                font-weight: bold;
+                position: relative;
+                animation: time 5s infinite;
+            }
+                #div1 {animation-timing-function: linear;}
+                #div2 {animation-timing-function: ease;}
+                #div3 {animation-timing-function: ease-in;}
+                #div4 {animation-timing-function: ease-out;}
+                #div5 {animation-timing-function: ease-in-out;}
+
+            @keyframes time{
+                10%{background-color:chartreuse;left: 1px;}
+                30% {background-color:darkgray;left: 200px;}
+                50% {background-color:darkorange;left: 200px;}
+                70% {background-color: darkmagenta;left: 1px;}
+               100% {background-color:deeppink;left: 1px;}
+            }
+            </style>
+    </head>
+    <body>
+        <h1 align="center">ANIMATION !</h1>
+        <p>The animation-timing-function property</p>
+
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+        <div id="div5">5</div>
+
+    </body>
+</html>

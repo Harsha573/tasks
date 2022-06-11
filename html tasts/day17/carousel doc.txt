@@ -1,0 +1,33 @@
+BOOTSTRAP-CAROUSEL:-
+
+The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. 
+It works with a series of images, text, or custom markup. 
+It also includes support for previous/next controls and indicators.
+
+WE CAN USE IN DIFFERENT TYPES LIKE:-
+
+-->Slides only
+
+-->With controls
+
+Adding in the previous and next controls.
+
+-->With indicators
+
+You can also add the indicators to the carousel, alongside the controls, too.
+
+-->With captions
+
+Add captions to your slides easily with the .carousel-caption element within any .carousel-item. 
+They can be easily hidden on smaller viewports, as shown below, with optional display utilities. We hide them initially with .
+d-none and bring them back on medium-sized devices with .d-md-block.
+
+-->Crossfade
+
+Add .carousel-fade to your carousel to animate slides with a fade transition instead of a slide.
+
+-->Individual .carousel-item interval
+
+Add data-interval="" to a .carousel-item to change the amount of time to delay between automatically cycling to the next item.
+
+-->

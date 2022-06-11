@@ -1,0 +1,307 @@
+Relational Selectors:-
+
+1,Child Selector (>):-
+
+The child selector selects all elements that are the children of a specified element.
+
+The following example selects all <p> elements that are children of a <div> element:
+
+Example:-
+
+div > p {
+  background-color: yellow;
+}
+===========================================================================================================================
+
+
+2,Descendant Selector:-
+
+The descendant selector matches all elements that are descendants of a specified element.
+
+The following example selects all <p> elements inside <div> elements: 
+
+Example:-
+
+div p {
+  background-color: yellow;
+}
+===========================================================================================================================
+3,What are Pseudo-classes?
+
+A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+==>Style an element when a user mouses over it
+==>Style visited and unvisited links differently
+==>Style an element when it gets focus
+
+The syntax of pseudo-classes:
+
+selector:pseudo-class {
+  property: value;
+}
+==========================================================================================================================
+4,Anchor Pseudo-classes:-
+
+Links can be displayed in different ways:
+
+Example:-
+
+/* unvisited link */
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}
+===========================================================================================================================
+5,The :first-child Pseudo-class:-
+
+The :first-child pseudo-class matches a specified element that is the first child of another element.
+
+==>Match the first <p> element
+
+In the following example, the selector matches any <p> element that is the first child of any element:
+
+Example:-
+
+p:first-child {
+  color: blue;
+}
+
+==>Match the first <i> element in all <p> elements
+
+In the following example, the selector matches the first <i> element in all <p> elements:
+
+Example:-
+
+p i:first-child {
+  color: blue;
+}
+==========================================================================================================================
+
+6,last-child Selector:-
+
+Specify a background color for the <p> element that is the last child of its parent:
+
+p:last-child {
+  background: #ff0000;
+}
+
+Definition and Usage:-
+
+The :last-child selector matches every element that is the last child of its parent.
+
+Tip: p:last-child is equal to p:nth-last-child(1).
+==========================================================================================================================
+
+7,nth-last-of-type() Selector:-
+
+Example:-
+
+Specify a background color for every <p> element that is the second p element of its parent, counting from the last child:
+
+p:nth-last-of-type(2) {
+  background: red;
+}
+
+Definition and Usage:-
+The :nth-last-of-type(n) selector matches every element that is the nth child, of a particular type,
+ of its parent, counting from the last child.
+
+n can be a number, a keyword, or a formula.
+
+Tip: Look at the :nth-last-child() selector to select the element that is the nth child, 
+regardless of type, of its parent, counting from the last child.
+==========================================================================================================================
+8,nth-child() Selector:-
+
+How to use the :nth-child() selector:
+
+/* Selects the second element of div siblings */
+div:nth-child(2) {
+  background: red;
+}
+
+/* Selects the second li element in a list */
+li:nth-child(2) {
+  background: lightgreen;
+}
+
+/* Selects every third element among any group of siblings */
+:nth-child(3) {
+  background: yellow;
+}
+
+Definition and Usage:-
+
+The :nth-child(n) selector matches every element that is the nth child of its parent.
+
+n can be a number, a keyword (odd or even), or a formula (like an + b).
+
+Tip: Look at the :nth-of-type() selector to select the element that is the nth child, of the same type (tag name), 
+of its parent.
+=========================================================================================================================
+
+8,only-child Selector:-
+
+Specify a background color for every <p> element that is the only child of its parent:
+
+p:only-child {
+  background: #ff0000;
+}
+
+Definition and Usage:-
+
+The :only-child selector matches every element that is the only child of its parent.
+==========================================================================================================================
+
+9,What are Pseudo-Elements?
+
+A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+-->Style the first letter, or line, of an element
+-->Insert content before, or after, the content of an element
+
+The syntax of pseudo-elements:
+
+selector::pseudo-element {
+  property: value;
+}
+
+==1,The ::first-line Pseudo-element:-
+
+The ::first-line pseudo-element is used to add a special style to the first line of a text.
+
+The following example formats the first line of the text in all <p> elements:
+
+Example :-
+
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+Note: The ::first-line pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-line pseudo-element:
+
+font properties
+color properties
+background properties
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+
+==>2,The ::first-letter Pseudo-element:-
+
+The ::first-letter pseudo-element is used to add a special style to the first letter of a text.
+
+The following example formats the first letter of the text in all <p> elements: 
+
+Example:-
+
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+Note: The ::first-letter pseudo-element can only be applied to block-level elements.
+
+The following properties apply to the ::first-letter pseudo- element: 
+
+font properties
+color properties 
+background properties
+margin properties
+padding properties
+border properties
+text-decoration
+vertical-align (only if "float" is "none")
+text-transform
+line-height
+float
+clear
+-------------------------------------------------------------------------------------------------------------------------
+==>3,Multiple Pseudo-elements
+Several pseudo-elements can also be combined.
+
+In the following example, the first letter of a paragraph will be red, in an xx-large font size. The rest of the first line will be blue, and in small-caps. The rest of the paragraph will be the default font size and color:
+
+Example
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+-------------------------------------------------------------------------------------------------------------------------
+==>4CSS - The ::before Pseudo-element:-
+
+The ::before pseudo-element can be used to insert some content before the content of an element.
+
+The following example inserts an image before the content of each <h1> element:
+
+Example:-
+
+h1::before {
+  content: url(smiley.gif);
+}
+-------------------------------------------------------------------------------------------------------------------------
+==>5CSS - The ::after Pseudo-element
+The ::after pseudo-element can be used to insert some content after the content of an element.
+
+The following example inserts an image after the content of each <h1> element:
+
+Example
+h1::after {
+  content: url(smiley.gif);
+}
+-------------------------------------------------------------------------------------------------------------------------
+==>6CSS - The ::marker Pseudo-element
+The ::marker pseudo-element selects the markers of list items.
+
+The following example styles the markers of list items:
+
+Example
+::marker {
+  color: red;
+  font-size: 23px;
+}
+-------------------------------------------------------------------------------------------------------------------------
+==>7,CSS - The ::selection Pseudo-element:-
+
+The ::selection pseudo-element matches the portion of an element that is selected by a user.
+
+The following CSS properties can be applied to ::selection: color, background, cursor, and outline.
+
+The following example makes the selected text red on a yellow background:
+
+Example
+::selection {
+  color: red;
+  background: yellow;
+}
+-------------------------------------------------------------------------------------------------------------------------

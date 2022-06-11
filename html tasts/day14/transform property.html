@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TRANSFORM PROPERTIES</title>
+        <style>
+            body{
+                border: 1px solid black;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+            h1:hover{
+                border: 1px solid black;
+                padding: 10px;
+                margin-bottom: 20px;
+                transform: scale(1.01,1.02,1.03);
+                background-color: darkorchid;
+            }
+            div{
+                border: 1px solid black;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+            div:nth-of-type(1){
+                transform: translate(20px,10px);
+                background-color: blue;
+                transform: scale(1.01,1.02,1.03);
+            }
+            div:nth-of-type(2){
+                transform:translate(40px,10px);
+                background-color: aqua;
+            }
+            div:nth-of-type(3){
+                transform: translate(60px,10px);
+                background-color: brown;
+            }
+            div:nth-last-of-type(2){
+                transform: translate(40px,10px);
+                background-color: cadetblue;
+            }
+            div:nth-last-child(1){
+                transform: translate(20px,10px);
+                background-color: crimson;
+            }
+            </style>
+    </head>
+    <body>
+        <section class="body">
+            <h1 align="center">TRANSFORM PROPERTY</h1>
+            <div>The transform property applies a 2D or 3D transformation to an element.</div>
+            <div>ROTATE</div>
+            <div>SCALE</div>
+            <div>MOVE</div>
+            <div>ROTATE</div>
+        </section>
+    </body>
+</html>

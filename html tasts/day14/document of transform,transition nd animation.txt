@@ -1,0 +1,237 @@
+[1] TRANSFORM:-
+
+->The transform property applies a 2D or 3D transformation to an element. 
+->This property allows you to rotate, scale, move, skew, etc., elements.
+->It modifies the coordinate space of the CSS visual formatting model.
+
+Example:-
+
+Rotate, skew, and scale three different <div> elements:
+
+div.a {
+  transform: rotate(20deg);
+}
+
+div.b {
+  transform: skewY(20deg);
+}
+
+div.c {
+  transform: scaleY(1.5);
+}
+
+==>CSS transform-origin Property:-
+
+The transform-origin property allows you to change the position of transformed elements.
+
+2D transformations can change the x- and y-axis of an element. 3D transformations can also change the z-axis of an element.
+
+Example:-
+
+Set a rotated element's base placement:
+
+div {
+  transform: rotate(45deg);
+  transform-origin: 20% 40%;
+}
+
+==>CSS transform-style Property:-
+
+The transform-style property specifies how nested elements are rendered in 3D space.
+
+Example:-
+
+Let the transformed child elements preserve the 3D transformations:
+
+div {
+  transform: rotateY(60deg);
+  transform-style: preserve-3d;
+}
+===========================================================================================================================================================================
+[2] TRANSITION:-
+
+->The transition property is a shorthand property for:
+
+->transition-property
+->transition-duration
+->transition-timing-function
+->transition-delay
+
+Example:-
+
+Hover over a <div> element to gradually change the width from 100px to 300px:
+
+div {
+  width: 100px;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 300px;
+}
+
+==>transition-delay Property:-
+
+The transition-delay property specifies when the transition effect will start.
+
+The transition-delay value is defined in seconds (s) or milliseconds (ms).
+
+Example:-
+
+Wait 2 seconds before the transition effect starts:
+
+div {
+  transition-delay: 2s;
+}
+
+==>transition-duration Property:-
+
+The transition-duration property specifies how many seconds (s) or milliseconds (ms) a transition effect takes to complete.
+
+Example:-
+
+Let the transition effect last for 5 seconds:
+
+div {
+  transition-duration: 5s;
+}
+
+==>transition-property Property:-
+
+The transition-property property specifies the name of the CSS property the transition effect is for (the transition effect will start when the specified CSS property changes).
+
+Example:-
+
+Hover over a <div> element, and change the width with a smooth transition effect:
+
+div {
+  transition-property: width;
+}
+
+div:hover {
+  width: 300px;
+}
+
+==>transition-timing-function Property:-
+
+The transition-timing-function property specifies the speed curve of the transition effect.
+
+This property allows a transition effect to change speed over its duration.
+
+Example:-
+
+A transition effect with the same speed from start to end:
+
+div {
+  transition-timing-function: linear;
+}
+======================================================================================================================================================================
+
+[3]CSS animation Property:-
+
+The animation property is a shorthand property for:
+
+=>animation-name
+=>animation-duration
+=>animation-timing-function
+=>animation-delay
+=>animation-iteration-count
+=>animation-direction
+=>animation-fill-mode
+=>animation-play-state
+
+Example:-
+
+Binding an animation to a <div> element, using the shorthand property:
+
+div {
+  animation: mymove 5s infinite;
+}
+
+==>animation-delay Property:-The animation-delay property specifies a delay for the start of an animation.
+
+The animation-delay value is defined in seconds (s) or milliseconds (ms).
+
+Example:-
+
+Start the animation after 2 seconds:
+
+div {
+  animation-delay: 2s;
+}
+
+==>animation-direction Property:-The animation-direction property defines whether an animation should be played forwards, backwards or in alternate cycles.
+
+Example:-
+
+Play the animation forwards first, then backwards:
+
+div {
+  animation-direction: alternate;
+}
+
+==>animation-duration Property:-The animation-duration property defines how long an animation should take to complete one cycle.
+
+Example:-
+
+Specify that the animation should complete one cycle in 3 seconds:
+
+div {
+  animation-duration: 3s;
+}
+
+==>animation-fill-mode Property:-The animation-fill-mode property specifies a style for the element when the animation is not playing (before it starts, after it ends, or both).
+
+CSS animations do not affect the element before the first keyframe is played or after the last keyframe is played. The animation-fill-mode property can override this behavior.
+
+Example:-
+
+Let the <div> element retain the style values from the last keyframe when the animation ends:
+
+div {
+  animation-fill-mode: forwards;
+}
+
+==>animation-iteration-count Property:-The animation-iteration-count property specifies the number of times an animation should be played.
+
+Example:-
+
+Play the animation two times:
+
+div {
+  animation-iteration-count: 2;
+}
+
+==>animation-name Property:-The animation-name property specifies a name for the @keyframes animation.
+
+Example:-
+
+Specify a name for the @keyframes animation:
+
+div {
+  animation-name: mymove;
+}
+
+==>animation-play-state Property:-The animation-play-state property specifies whether the animation is running or paused.
+
+Example:-
+
+Pause an animation:
+
+div {
+  animation-play-state: paused;
+}
+
+==>animation-timing-function Property:-The animation-timing-function specifies the speed curve of an animation.
+
+The speed curve defines the TIME an animation uses to change from one set of CSS styles to another.
+
+The speed curve is used to make the changes smoothly.
+
+Example:-
+
+Play an animation with the same speed from beginning to end:
+
+div {
+  animation-timing-function: linear;
+}

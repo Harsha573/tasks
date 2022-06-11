@@ -1,0 +1,37 @@
+Difference between FLOAT, FLEX and Grid:-
+
+FLOAT:-
+
+==>The float CSS property is used to position the elements to the left, right, of its container along with permitting the text and inline elements to wrap around it. 
+==>The float property defines the flow of content in the page. 
+==>The remaining elements will be part of the flow if the element is removed from the normal flow of the content. 
+==>This property is ignored by the absolutely positioned elements. 
+==>It can be written in a CSS file or can be directly specified in the style of an element.
+==>Syntax:
+
+float: none|left|right|initial|inherit;
+
+FLEX:-
+
+==>The flex CSS shorthand property is the combination of flex-grow, flex-shrink, and flex-basis property. 
+==>It is used to set the length of flexible items. 
+==>The flex property is much responsive and mobile-friendly. 
+==>It is easy to position child elements and the main container. 
+==>The margin doesn’t collapse with the content margins. 
+==>The order of any element can be easily changed without editing the HTML section.
+
+==>Syntax:
+
+flex: flex-grow flex-shrink flex-basis|auto|initial|inherit;
+
+
+GRID:-
+
+==>The CSS Grid Layout module is used to create a grid-based layout system, 
+with the help of rows and columns it makes easier to design any webpage without using floats and positioning.
+
+==>Syntax: 
+ 
+
+.class {
+    display:grid;

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ANIMATION</title>
+    <style>
+        h1{
+            border:1px solid black;
+            padding: 10px;
+            height:100%;
+            width: 100%;
+            animation-name: row;
+            animation-duration: 10s;
+        }
+        @keyframes row{
+            10%{background-color: blue;}
+            30%{background-color: crimson;}
+            50%{background-color: darkgreen;}
+            70%{background-color: darkmagenta;}
+        }
+        div{
+            height:100px;
+            width: 100px;
+            background-color: blueviolet;
+            position: relative;
+            animation-name: div;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+        }
+        @keyframes div{
+            10% {background-color:chartreuse;left: 1px; top: 0px;}
+            30% {background-color:darkgray;left: 200px; top: 0px;}
+            50% {background-color:darkorange;left: 200px; top: 200px;}
+            70% {background-color: darkmagenta;left: 1px; top: 200px;}
+            100% {background-color:deeppink;left: 1px; top: 0px;}
+        }
+        </style>
+</head>
+<body>
+    <h1 align="center">ANIMATION PROPERTY</h1>
+    <div>ANIMATION</div>
+</body>
+</html>

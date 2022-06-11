@@ -1,0 +1,23 @@
+Adventages of grid layouts:-
+
+=>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, 
+making it easier to design web pages without having to use floats and positioning.
+
+=>Grids have so many uses, from helping to align and balance your designs, to helping you achieve cool effects like diagonal typography.
+They're really so much more than just some lines on a page, they structure, guide, and shape your design in a way that helps you to achieve your desired end result.
+
+=>Can solve larger, more complex problems  in a shorter time
+
+=>Easier to collaborate with other organizations
+
+=>Make better use of existing hardware.
+
+=>Grids Create a Fresh Structure.
+
+=>Easy to Create and Navigate.
+
+=>Structured, but Original.
+
+=>Grids Help Lineup Everything.
+
+=>Grids are Highly Flexible.

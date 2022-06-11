@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Pscudo Element</title>
+    <style>
+        p::first-line{
+            color: blue;
+            font-style: italic;
+            font-size: large;
+        }
+        p::first-letter{
+            color: chartreuse;
+            font-size: xx-large;
+        }
+        p::before{
+            content: "[";
+       }
+       p::after{
+           content: "]";
+           color: blue;
+           font-size: xx-large;
+       }
+       li::marker{
+           color: greenyellow;
+           font-size: 30px;
+       }
+       h1::selection{
+           color: yellow;
+       }
+
+    </style>
+    </head>
+    <body>
+        <h1>Pseudo-Elements</h1>
+        <p>Your CSS pseudo-element is used to style specified parts of an element.</p>
+        <div>
+            <li>Style the first letter, or line, of an element</li>
+            <li>Insert content before, or after, the content of an element</li>
+        </div>
+        <ul>
+            <li>The ::First-line Pseudo-element</li>
+            <li>The ::first-letter Pseudo-element</li>
+            <li>Pseudo-elements and HTML Classes</li>
+            <li>The ::before Pseudo-element</li>
+            <li>The ::after Pseudo-element</li>
+            <li>The ::marker Pseudo-element</li>
+            <li>The ::selection Pseudo-element</li>
+        </ul>
+    </body>
+</html>
